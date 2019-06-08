@@ -1,12 +1,15 @@
 .sidebar.animated.fadeInDown
   .logo-title
     .title
-      img(src= url_for('images/logo@2x.png'),style="width:127px;")
+      img(src= url_for('images/my-avatar.jpg'),style="width:127px;")
+
+      //img(src= url_for('images/logo@2x.png'),style="width:127px;")
+      p!= ""
       h3(title="")
         a(href="/")= config.title
       if theme.description
         .description
-          p= theme.description
+          p!= theme.description
 
   ul.social-links
     if theme.twitter

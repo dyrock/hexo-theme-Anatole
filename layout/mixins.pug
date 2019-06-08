@@ -41,6 +41,16 @@ mixin make_pager()
 				li.next.pagbuttons
 					a.btn(role="navigation",href=url_for(next))= __('next')
 
+mixin tagList()
+	.archive
+		| <ul class="listing">
+		- site.tags.each(function (item) {
+			.listing-item
+				a(href= '/tags/' + item.name +'/', title= item.name)= item.name + ' (' + item.length + ')'
+					
+		- })
+
+
 mixin postList()
 	.archive
 		- var year = 0;

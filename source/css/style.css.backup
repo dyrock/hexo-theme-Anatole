@@ -16,7 +16,7 @@ body {
 p {
   line-height: 1.9em;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 a {
@@ -111,12 +111,12 @@ a:hover, a:active {
 .content {
   height: auto;
   float: right;
-  width: 75%;
+  width: 60%;
   margin-top: 60px;
 }
 
 .page-top {
-  width: 75%;
+  width: 60%;
   position: fixed;
   right: 0;
   z-index: 3;
@@ -170,7 +170,7 @@ a:hover, a:active {
 }
 
 .sidebar {
-  width: 25%;
+  width: 20%;
   -webkit-background-size: cover;
   background-size: cover;
   background-color: #fff;
@@ -406,40 +406,8 @@ a:hover, a:active {
   width: 100%;
 }
 
-.list-tags {
-  
-  margin: 30px;
-  padding: 0;
-}
-.list-tags li {
-  list-style-type: none;
-  padding: 0;
-}
-
-.list-tags .listing {
-  padding: 0;
-}
-.list-tags .listing .listing-item {
-  padding-bottom: 5px;
-}
-
-.list-tags .listing .listing-item a {
-  font-size: 24px;
-  color: #666666;
-  font-weight: 600;
-  line-height: 2.2em;
-  color: #8F8F8F;
-}
-.list-tags .listing .listing-item a:hover {
-  font-size: 24px;
-  color: #666666;
-  font-weight: 600;
-  line-height: 2.2em;
-  color: #4786D6;
-}
-
 .list-with-title {
-  font-size: 16px;
+  font-size: 14px;
   margin: 30px;
   padding: 0;
 }
@@ -460,7 +428,7 @@ a:hover, a:active {
   padding-bottom: 5px;
 }
 .list-with-title .listing .listing-post .post-time {
-  float: left;
+  float: right;
   color: #C5C5C5;
 }
 .list-with-title .listing .listing-post a {
@@ -711,7 +679,7 @@ a.btn {
   }
 
   .content {
-    margin-top: 420px;
+    margin-top: 60px;
     width: 100%;
     z-index: 2;
     position: absolute;
