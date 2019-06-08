@@ -7,19 +7,33 @@
         a(href="/")= __('Home')	
     li
       if is_current('about')
-        a.current(href="/about")= __('About')			
+        a.current(href="/about.html")= __('About')			
       else
-        a(href="/about")= __('About')
+        a(href="/about.html")= __('About')
+
+    li
+      if is_tag()
+        a.current(href="/tags")= __('Tags')
+      else
+        a(href="/tags")= __("Tags")
+    
+    //- li
+    //-   if is_current('Albums')
+    //-     a.current(href="/albums")= __('Albums')
+    //-   else
+    //-     a(href="/albums")= __("Albums")
     li
       if is_archive()
         a.current(href="/archives")= __('Archive')
       else
         a(href="/archives")= __('Archive')
-    li
+    
+    //li
       if is_current('links')
         a.current(href="/links")= __('Links')					
       else
         a(href="/links")= __('Links')		
+
   .information
     .back_btn
       li

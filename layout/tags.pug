@@ -1,0 +1,16 @@
+extends partial/layout
+
+block site_title
+  != "tags"
+
+block description
+  - var desc = '标签列表/Tags';
+  meta(name="description", content=desc)
+
+block content
+  .autopagerize_page_element: .content
+    .archive.animated.fadeInDown
+      ul.list_tags
+        include mixins
+        +tagList()
+        +make_pager(__('prev'), __('next'))
